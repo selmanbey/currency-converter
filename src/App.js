@@ -4,7 +4,7 @@ import Results from './components/Results.js'
 import './App.css'
 
 const App = () => {
-  const [curs, setCurs] = useState({ base: "EUR", other: ["USD", "JPY"]})
+  const [curs, setCurs] = useState({ base: "EUR", other: ["USD", "JPY"] })
   const [rates, setRates] = useState({ EUR: null, USD: null, JPY: null })
   const [vals, setVals] = useState({ EUR: 0, USD: 0, JPY: 0 })
   const [baseCur, setBaseCur] = useState("EUR")
@@ -23,7 +23,7 @@ const App = () => {
   }, [baseCur])
 
   useEffect(() => {
-    async function fetchRates(curs) {
+    async function fetchRates(curs, setRates) {
       let { base, other } = curs
       let res = await fetch(`https://api.exchangeratesapi.io/latest?base=${ base }`)
       res = await res.json()
@@ -35,7 +35,7 @@ const App = () => {
       setRates(rates)
     }
 
-    fetchRates(curs);
+    fetchRates(curs, setRates)
   }, [curs])
 
   useEffect(() => {
