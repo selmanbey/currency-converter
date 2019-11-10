@@ -1,0 +1,26 @@
+.res-wrapper {
+  color: darkgray;
+  text-align: center;
+}
+
+.res-wrapper p:hover {
+  color: steelblue;
+  cursor: pointer;
+}
+
+.res-wrapper p span {
+  font-size: 2em;
+  max-width: 15em;
+  overflow: hidden;
+}
+
+.res-wrapper p span:first-of-type {
+  text-align: right;
+  margin-right: 0.5em;
+}
+
+@media only screen  and (max-width: 568px) {
+  .res-wrapper p span {
+    font-size: 1.2em;
+  }
+}

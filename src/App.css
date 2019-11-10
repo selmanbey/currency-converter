@@ -1,0 +1,23 @@
+.app-wrapper {
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.app-converter {
+  border: 1px solid lightsteelblue;
+  padding: 1em 1.5em;
+  background-color:white;
+}
+
+.app-invalid-input {
+  display: none;
+  font-size: 1.2em;
+  background-color: palevioletred;
+  color: white;
+  border: 1px solid palevioletred;
+  padding: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+}
