@@ -1,5 +1,5 @@
-This repository contains a currency-converter between EUR, USD, JPY.  
-It uses the open-source and free API by https://exchangeratesapi.io/
+This repository contains a currency-converter app between EUR, USD, JPY.  
+**See the app here:** https://selmanbey.github.io/currency-converter/  
 
 ## Development
 To run the project on your local machine:  
