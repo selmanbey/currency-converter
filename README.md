@@ -1,8 +1,6 @@
 This repository contains a currency-converter between EUR, USD, JPY.  
 It uses the open-source and free API by https://exchangeratesapi.io/
 
-This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Development
 To run the project on your local machine:  
 1. Clone or download the repository,  
